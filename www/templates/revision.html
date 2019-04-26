@@ -1,0 +1,41 @@
+<ion-view id="revision">
+  <ion-content>
+    <ion-scroll class="list" direction="y">
+      <div class="wrapper">
+        <div class="choix-verbe">
+          <h3 class="" ng-click='choixVerbe(1,"parl")'>Parler</h3>
+          <h3 class="" ng-click='choixVerbe(2,"ag")'>Agir</h3>
+          <h3 class="" ng-click='choixVerbe(1,"march")'>Marcher</h3>
+          <h3 class="" ng-click='choixVerbe(2,"fin")'>Finir</h3>
+        </div>
+        <div class="Listes" ng-repeat="present in liste.present"
+             class="item item-thumbnail-left item-icon-right">
+          <h3>Présent</h3>
+          <div ng-repeat="pronom in liste.pronom">
+            <p ng-if="verbeActifGroupe == 1">{{pronom}} {{verbeActifInfinfinitif}}{{present.premier[$index] }}</p>
+            <p ng-if="verbeActifGroupe == 2">{{pronom}} {{verbeActifInfinfinitif}}{{present.deuxieme[$index] }}</p>
+          </div>
+        </div>
+        <div class="Listes" ng-repeat="imparfait in liste.imparfait"
+             class="item item-thumbnail-left item-icon-right">
+          <h3>Imparfait</h3>
+          <div ng-repeat="pronom in liste.pronom">
+            <p ng-if="verbeActifGroupe == 1">{{pronom}} {{verbeActifInfinfinitif}}{{imparfait.premier[$index] }}</p>
+            <p ng-if="verbeActifGroupe == 2">{{pronom}} {{verbeActifInfinfinitif}}{{imparfait.deuxieme[$index] }}</p>
+          </div>
+        </div>
+        <div class="Listes" ng-repeat="futur in liste.futur"
+             class="item item-thumbnail-left item-icon-right">
+          <h3>Futur</h3>
+          <div ng-repeat="pronom in liste.pronom">
+            <p ng-if="verbeActifGroupe == 1">{{pronom}} {{verbeActifInfinfinitif}}{{futur.premier[$index] }}</p>
+            <p ng-if="verbeActifGroupe == 2">{{pronom}} {{verbeActifInfinfinitif}}{{futur.deuxieme[$index] }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="exe-button">
+        <a ui-sref="appli.exercice" ><h2>S'entraîner</h2></a>
+      </div>
+    </ion-scroll>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,48 @@
+<ion-view id="exercice">
+
+  <ion-content>
+    <ion-scroll class="list" direction="y">
+      <div class="wrapper">
+        <div class="head">
+          <h2>Bonjour {{userFirstname}}</h2>
+          <p>{{question}}</p>
+        </div>
+        <div class="choix-temps">
+          <div class="child">
+            <img src="../img/plus.png">
+            <p ng-click='showExe("imparfait")'>Imparfait</p>
+          </div>
+          <div class="child">
+            <img src="../img/plus.png">
+            <p ng-click='showExe("present")'>Présent</p>
+          </div>
+          <div class="child">
+            <img src="../img/plus.png">
+            <p ng-click='showExe("futur")'>Futur</p>
+          </div>
+        </div>
+        <div ng-show="exeStart" class="container-exe">
+          <div class="exercice">
+            <p ng-if='temps == "imparfait"'>Conjugue le verbe <strong>{{verbe}}</strong> à l'{{temps}} :</p>
+            <p ng-if='temps !== "imparfait"'>Conjugue le verbe <strong>{{verbe}}</strong> au {{temps}} :</p>
+            <form class="formulaire" ng-submit='submit()'>
+              <p class="consigne">{{pronom}} {{verbeInf}}</p>
+              <input type="text" class="reponse-user">
+              <input ng-if='repondu == 0' class="submit" type="submit" id="submit" value="" />
+            </form>
+            <div ng-if='repondu == 1' class="verdict">
+              <p>{{verdict}}</p>
+              <p ng-if="correction !== 0">La bonne réponse était : <br>{{correction}}</p>
+            </div>
+          </div>
+          <div class="score">
+            <h3>{{score}}%</h3>
+            <p>Score</p>
+          </div>
+        </div>
+      </div>
+
+    </ion-scroll>
+  </ion-content>
+
+</ion-view>

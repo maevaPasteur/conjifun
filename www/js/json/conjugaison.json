@@ -1,0 +1,116 @@
+{
+  "pronom" :
+  [
+    "je",
+    "tu",
+    "il",
+    "nous",
+    "vous",
+    "elles"
+  ],
+  "present" :
+  [
+    {
+      "premier" :
+        [
+          "e",
+          "es",
+          "e",
+          "ons",
+          "ez",
+          "ent"
+        ],
+
+      "deuxieme" :
+      [
+        "is",
+        "is",
+        "it",
+        "issons",
+        "issez",
+        "issent"
+      ]
+    }
+  ],
+  "imparfait" :
+  [
+    {
+      "premier" :
+      [
+        "ais",
+        "ais",
+        "ait",
+        "ions",
+        "iez",
+        "aient"
+      ],
+
+      "deuxieme" :
+      [
+        "issais",
+        "issis",
+        "it",
+        "issions",
+        "issiez",
+        "issient"
+      ]
+    }
+  ],
+  "futur" :
+  [
+    {
+      "premier" :
+      [
+        "erai",
+        "eras",
+        "era",
+        "erons",
+        "erez",
+        "eront"
+      ],
+
+      "deuxieme" :
+      [
+        "irai",
+        "iras",
+        "ira",
+        "irons",
+        "irez",
+        "iront"
+      ]
+    }
+  ],
+  "verbe" :
+  [
+    {
+      "premier" : [
+        {
+          "entier": [
+            "parler",
+            "marcher",
+            "danser"
+          ],
+          "infinitif": [
+            "parl",
+            "march",
+            "dans"
+          ]
+        }
+      ],
+      "deuxieme" : [
+        {
+          "entier": [
+            "finir",
+            "choisir",
+            "agir"
+          ],
+          "infinitif": [
+            "fin",
+            "chois",
+            "ag"
+          ]
+        }
+      ]
+    }
+  ]
+}

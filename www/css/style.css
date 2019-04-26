@@ -1,0 +1,284 @@
+/* Empty. Add your own CSS if you like */
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  font-size: 20px;
+}
+
+.bar.bar-positive {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: transparent;
+    color: #ffffff;
+}
+
+body {
+    background-image: url("../img/fond.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-color: #f1f1f1;
+}
+
+.pane {
+    background-color: transparent;
+}
+
+.header {
+    height: 44px;
+    position: relative;
+    text-align : right;
+}
+
+.header img {
+    width: 40px;
+    height: 30px;
+    margin-left : 10px;
+    margin-top: 10px;
+}
+
+.header .title {
+    margin-right: auto;
+    text-align: right;
+    padding-right: 10px;
+    font-weight: 100;
+    text-align: right;
+    right: 0 !important;
+    top: 5px;
+}
+
+.container-menu {
+    width: 60%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 60px;
+}
+
+.container-menu .child {
+    background-color: #ffffff;
+    padding: 15px;
+    text-align: left;
+    margin-bottom : 15px;
+    border-radius: 5px;
+}
+
+.container-menu .child img,
+.container-menu .child p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.container-menu .child p {
+    padding-left: 15px;
+    color: #c5c5c5;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.container-menu .child img {
+  width: 30px;
+  height: 30px;
+}
+
+.head h2, .head p {
+  color: #ffffff;
+}
+
+.head h2 {
+  font-size: 25px;
+  font-weight: 500;
+  padding-top: 40px;
+}
+
+
+.wrapper {
+  width: calc(100% - 20px);
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#profile .infos p,
+#profile .name h3{
+  color: #a7a7a7;
+  text-align: center;
+}
+
+#profile .infos p span,
+ #profile .name h3 span{
+  color: #fc6680;
+}
+
+#profile .name h3 {
+  font-size: 18px;
+}
+
+#profile .infos p {
+  font-size: 16px;
+}
+
+#profile .name {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+#profile .profil-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: solid 3px #f1f1f1;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.exe-button {
+  background: linear-gradient(#fc6085, #fdaa3e);
+  width: 60%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.exe-button h2 {
+  font-weight: 100;
+  color: #ffffff;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.exe-button a {
+  text-decoration: none;
+}
+
+#revision .choix-verbe h3 {
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 20px;
+  margin:0;
+}
+
+#revision .choix-verbe {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+#revision .choix-verbe h3.actif {
+  font-size: 30px;
+}
+
+#revision .Listes {
+  margin-top: 20px;
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#revision .Listes p {
+  font-size: 16px;
+}
+
+#revision .Listes h3 {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+#revision .exe-button {
+  margin-bottom: 100px;
+}
+
+#exercice .head h2 {
+  padding-top: 0;
+}
+
+#exercice .choix-temps .child {
+  background-color: #ffffff;
+  padding: 15px;
+  text-align: left;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+#exercice .choix-temps .child img,
+#exercice .choix-temps .child p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#exercice .choix-temps {
+    width: 60%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 60px;
+}
+
+#exercice .choix-temps p {
+    padding-left: 15px;
+    color: #c5c5c5;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+#exercice .choix-temps img {
+    width: 30px;
+    height: 30px;
+}
+
+.container-exe {
+  padding-top: 30px;
+}
+
+.formulaire p, .formulaire input {
+  display: inline-block;
+  vertical-align: middle;
+  height: 34px;
+  line-height: 34px;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.formulaire .submit {
+background-position: center center;
+    width: 34px;
+    height: 34px;
+    webkit-appearance: none;
+    border: 0;
+    background-size: contain;
+    background-image: url(../img/valider.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.reponse-user {
+      width: 150px;
+}
+
+.verdict {
+  text-align : center;
+  color: #fc6284;
+  padding-top: 30px;
+}
+
+.score {
+  text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.view-container {
+background: none;
+}

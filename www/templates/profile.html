@@ -1,0 +1,30 @@
+<ion-view id="profile">
+  <ion-content>
+    <ion-scroll class="list" direction="y">
+      <div class="wrapper">
+        <div class="head">
+          <h2>Profil</h2>
+        </div>
+        <div class="container-profil" ng-repeat="user in liste.user">
+          <img class="profil-picture" src={{user.image}}>
+          <div class="name">
+            <h3>Identifiant : <span>{{user.username}}</span></h3>
+            <h3>Prénom : <span>{{user.firstname}}</span></h3>
+            <h3>Nom : <span>{{user.lastname}}</span></h3>
+          </div>
+          <div class="infos">
+            <p>Mail : <span>{{user.mail}}</span></p>
+            <p>Mot de passe : <span>{{user.mp}}</span></p>
+            <p>Date d'inscription : <span>{{user.date}}</span></p>
+            <p>Age : <span>{{user.age}}</span></p>
+            <p>Ville : <span>{{user.ville}}</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="exe-button">
+        <a ui-sref="appli.exercice" ><h2>S'entraîner</h2></a>
+      </div>
+    </ion-scroll>
+  </ion-content>
+</ion-view>
+

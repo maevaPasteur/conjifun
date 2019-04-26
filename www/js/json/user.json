@@ -1,0 +1,18 @@
+{
+  "user" :
+  [
+    {
+      "firstname": "Jean-Marie",
+      "lastname": "Fino",
+      "username": "MrFino999",
+      "mail": "jean_marie.fino@univ-fcomte.fr",
+      "mp": "******",
+      "date-inscription": "21",
+      "party-made": "37",
+      "score": "82%",
+      "ville": "Audincourt",
+      "age": "58",
+      "image": "../img/jmf.jpg"
+    }
+  ]
+}
