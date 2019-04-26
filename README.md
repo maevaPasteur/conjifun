@@ -1,2 +1,2 @@
 # conjifun
-Progressiv web app
+Ionic & Angular 2
